@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Refersner</title>
+</head>
+
+<body>
+    <h1>
+        Hey I'm Learning Javascript
+    </h1>
+    <script>
+        let a = 345;
+        console.log(a);
+        function hello() {
+            console.log("Hey I'm Sunny Kumar From Hajipur")
+        }
+        let Sunny = {
+            n: 23,
+            m: 12,
+            func: function myfunc(number) {
+                console.log("The number is " + number);
+            }
+        }
+        document.addEventListener("click", function click() {
+            console.log("clicked")
+            // alert("hello")
+            let conf = confirm("Are you sure")
+            console.log(conf)
+        })
+        let arr = [12, 3, 4, 5]
+        console.log(this)
+        let mobj = {
+            k: this,
+            myfunc: function (number) {
+                console.log(this)
+            }
+        }
+        mobj.myfunc();
+        console.log(this)
+        setTimeout(() => {
+            console.log("hey")
+        }, 3000);
+    </script>
+</body>
+
+</html>
